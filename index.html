@@ -87,7 +87,7 @@ font-family: Arial;
       <div class="navbar">
         
         <div class="dropdown">
-          <button class="dropbtn" allign="right">Cheats</button>
+          <button class="dropbtn">Cheats</button>
           <div class="dropdown-content">
           <a href="#">Cheat 1</a>
           <a href="#">Cheat 2</a>
@@ -96,17 +96,24 @@ font-family: Arial;
         </div>
         
         <div class="dropdown">
-          <button class="dropbtn" allign="right">Games</button>
+          <button class="dropbtn" onclick="go('https://game-central.github.io/Website/games.html')">Games</button>
           <div class="dropdown-content">
-          <a href="#">FNAF 1</a>
-          <a href="#">FNAF 2</a>
-          <a href="#">FNAF 3</a>
-          <a href="#">FNAF 4</a>
+          <a onclick="fnaf1()">FNAF 1</a>
+          <a onclick="fnaf2()">FNAF 2</a>
+          <a onclick="fnaf3()">FNAF 3</a>
+          <a onclick="fnaf4()">FNAF 4</a>
           </div>
         </div>
         
-        <a href="home page" allign="right">Home</a>
+        <a onclick="go('https://game-central.github.io/Website/home.html')">Home</a>
         
       </div>
+      <iframe id="iframe" src="https://game-central.github.io/Website/home.html" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+      
+      <script>
+      function go(loc) {
+    document.getElementById('iframe').src = loc;
+  }
+      </script>
     </body>
   </html>
