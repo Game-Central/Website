@@ -4,6 +4,7 @@
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9724959269202750"
      crossorigin="anonymous"></script>
      
+     
       <style>
 .navbar {
   overflow: hidden;
@@ -13,7 +14,7 @@
 }
 
 .navbar a {
-  float: right;
+  float: left;
   font-size: 16px;
   color: white;
   text-align: center;
@@ -22,7 +23,7 @@
 }
 
 .dropdown {
-  float: right;
+  float: left;
   overflow: hidden;
   text-align: center;
 }
@@ -70,7 +71,7 @@
 } 
         
 .nonclickable{
-float: left; 
+float: right; 
 font-size: 16px; 
 color: white; 
 text-align: center; 
@@ -90,38 +91,47 @@ overflow: hidden;
 background-color: #333;
 }
       </style>
+      <a class="announcment"><u>This Is The Announcment Bar, Announcments Will Appear Here</u></a>
+      <br>
       <title>Game Central</title>
       <link rel="icon" href="https://game-central.github.io/Website/controller.png">
     </head>
     <body style="background-color: #333;">
       <a class="nonclickable">Game Central</a>
-      <img class="nonclickable" src="https://hitwebcounter.com/counter/counter.php?page=7946065&style=0027&nbdigits=7&type=page&initCount=0" alt="Counter" height="17px" width="0px" style="background-color: #333;">
+      <img class="nonclickable" src="https://mikesproxy.herokuapp.com/main/https://hitwebcounter.com/counter/counter.php?page=7946065&style=0027&nbdigits=7&type=page&initCount=0" alt="Counter" height="17px" width="0px" style="background-color: #333;">
 
       <div class="navbar">
         
+        <a onclick="go('https://game-central.github.io/Website/Pages/home.html')">Home</a>
+
+
+        <div class="dropdown">
+          <button class="dropbtn" onclick="go('https://game-central.github.io/Website/Pages/games.html')">Games</button>
+          <div class="dropdown-content">
+            <a href="#">Featured Game 1</a>
+            <a href="#">Featured Game 2</a>
+            <a href="#">Featured Game 3</a>
+            <a href="#">Featured Game 4</a>
+            <a href="#">Featured Game 5</a>
+          </div>
+        </div>
+
         <div class="dropdown">
           <button class="dropbtn">Cheats</button>
           <div class="dropdown-content">
-          <a href="#">Cheat 1</a>
-          <a href="#">Cheat 2</a>
-          <a href="#">Cheat 3</a>
+            <a href="#">Bookmarklets</a>
+            <a href="#">Proxies</a>
+            <a href="#">Cheat 3</a>
           </div>
         </div>
-       
-        
-        <a onclick="go('https://game-central.github.io/Website/games.html')">Games</a>
-          
-        <a onclick="go('https://game-central.github.io/Website/home.html')">Home</a>
-        
+
       </div>
-      <br>
-      <a class="announcment"><u>This Is The Announcment Bar, Announcments Will Appear Here</u></a>
       <br><br>
       <a class="announcment">You Can Also Click</a><a class="announcment" onclick="invisibletab()"><u>This</u></a><a class="announcment">To Open The Website In An Invisible Tab</a>
       
     <br><br>
     
-      <iframe id="iframe" src="https://game-central.github.io/Website/home.html" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+      <iframe id="iframe" src="https://game-central.github.io/Website/Pages/home.html" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
       
       <script>
       function go(loc) {
