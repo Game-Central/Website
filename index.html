@@ -127,7 +127,7 @@ background-color: #7A7A7A;
 
       </div>
       <br><br>
-      <a style="float: left; padding: 1px 1px; " class="nonclickable">You Can Also Click </a><a style="float: left; padding: 1px 1px; " class="nonclickable" onclick="invisibletab()"><u>This</u></a><a style="float: left; padding: 1px 1px; " class="nonclickable"> To Open The Website In An Invisible Tab</a>
+      <a style="float: left; padding: 1px 1px; " class="nonclickable">You Can Also Click </a><a style="float: left; padding: 1px 1px; " class="nonclickable" onclick="invisibletab('https://game-central.github.io/Website/index.html')"><u>This</u></a><a style="float: left; padding: 1px 1px; " class="nonclickable"> To Open The Website In An Invisible Tab</a>
       
     <br><br>
     
@@ -138,8 +138,8 @@ background-color: #7A7A7A;
     document.getElementById('iframe').src = loc;
   }
   
-  function invisibletab() {
-      var url = "https://game-central.github.io/Website/index.html"
+  function invisibletab(loc) {
+      var url = loc
       var win;
       win = window.open();
       win.document.body.style.margin = "0";
