@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function openPage() {
+      var width  = 400;
+      var height = 500;
+      var left = Math.random() * (1000 - 1) + 1;
+      var top = Math.random() * (300 - 1) + 1;
+      var params = 'width='+width+', height='+height;
+      params += ', top='+top+', left='+left;
+      params += ', resizable=no';
+      params += ', scrollbars=no';
+      params += ', toolbar=no';
+      window.open('https://www.bing.com/','', params); 
+      loop();
+    }
+    function loop() {
+      openPage()
+    }
+  </script>
+  <body onload="openPage()">
+  </body>
+</html>
